@@ -52,7 +52,7 @@ void formatter(std::ostream& os, const std::string& message) {
 }
 EOF
 ```
-Создание CmakeList.txt как инструкцию для сборки(говорит компилятору откуда брать заголовки и с чем линковать)
+Создание CmakeLists.txt как инструкцию для сборки(говорит компилятору откуда брать заголовки и с чем линковать)
 
 ```shell
 
@@ -68,7 +68,7 @@ target_include_directories(formatter PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 EOF
 ``` 
 ### 2.2 Сборка и проверка результата
-Далее сборка и запуск компляции всей структуры
+Далее сборка и запуск компиляции всей структуры
 ```shell
 rm -rf build
 cmake -H. -Bbuild
@@ -87,7 +87,7 @@ cmake --build build
 ls -la build/libformatter.a
 ```
 
-## 3.Содание библиотеки formatter_ex зависимой от formatter)
+## 3.Содание библиотеки formatter_ex зависимой от formatter
 
 ### 3.1 Создаем папку для нашей библиотеки
 ```shell
@@ -216,7 +216,7 @@ cmake --build build
 ```
 Результат:[Hello, World!]
 
-## 5.Создание библиоткеи solver_lib для решения квадратных уравнений 
+## 5.Создание библиотеки solver_lib для решения квадратных уравнений 
 ```shell
 mkdir -p solver_lib
 cd solver_lib
@@ -253,7 +253,7 @@ EOF
 ```
 ### 5.3 Создаем CMakeLists.txt 
 
-Все как в прошыле разы 
+Все как в прошлые разы 
 ```shell
 cat > CMakeLists.txt << 'EOF'
 cmake_minimum_required(VERSION 3.10)
@@ -345,10 +345,10 @@ cmake --build build
 ```
 Результат:
 Solving: 1*x^2 - 3*x + 2 = 0
-/[Root 1: 2]
-/[Root 2: 1]
+[Root 1: 2.000000]
+[Root 2: 1.000000]
 
-##  7.Итговая структура
+##  7.Итоговая структура
 ```shell
 ~/Tagir-iu/-03/
 ├── formatter_lib/          # библиотека для форматирования
