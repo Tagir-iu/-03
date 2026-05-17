@@ -375,3 +375,4 @@ Solving: 1*x^2 - 3*x + 2 = 0
     ├── CMakeLists.txt
     └── build/solver
 ```
+Репозиторий с выполненой работой: https://github.com/Tagir-iu/lab-repository/tree/main/lab3
